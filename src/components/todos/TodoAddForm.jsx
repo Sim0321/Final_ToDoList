@@ -27,9 +27,10 @@ function TodoAddForm() {
       onSubmit={(e) => {
         e.preventDefault();
         dispatch(__postTodo(inputs));
-        navigate("/");
+        navigate("/todos");
         setInputs({ user: "", title: "", body: "" });
-      }}>
+      }}
+    >
       <label htmlFor="user">작성자</label>
       <Input
         size="wide"
@@ -90,4 +91,4 @@ const Textarea = styled.textarea`
   border: 1px solid rgb(238, 238, 238);
   padding: 12px;
   font-size: 14px;
-`
+`;
