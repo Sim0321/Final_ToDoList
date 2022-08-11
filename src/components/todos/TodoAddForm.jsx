@@ -1,9 +1,8 @@
+// eslint-disable-next-line
+
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-// import Input from "../elements/Input";
-// import TextArea from "../elements/TextArea";
-// import Button from "../elements/Button";
 import { __postTodo } from "../../redux/modules/todoSlice";
 import { useDispatch } from "react-redux";
 import Button from "../../elements/Button";
@@ -53,8 +52,7 @@ function TodoAddForm() {
       />
       <label htmlFor="body">내용</label>
       <Textarea
-        size="wide"
-        rows="20"
+        rows="19"
         name="body"
         placeholder="내용을 입력해주세요.(200자 이내)"
         maxlength="200"
